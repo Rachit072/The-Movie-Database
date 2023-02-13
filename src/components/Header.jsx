@@ -15,7 +15,6 @@ function Header(){
                         <li>More</li>
                     </ul>
                 </div>
-
             </div>
             <div className="nav2">
                 <ul  className="nav">
