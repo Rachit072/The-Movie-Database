@@ -5,7 +5,9 @@
 /* *{
   font-family: 'Source Sans Pro', sans-serif;
 } */
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400&display=swap');
 
 .logo {
@@ -18,7 +20,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
+  /* position: fixed; */
   background-color: rgb(13, 37, 65);
   height: 64px;
   width: 100%;
@@ -87,13 +89,14 @@ li{
   background-color: white;
   border-radius: 30px;
   border: none;
-  position: relative;
+  
 }
 #searchbar {
   width: 92.2%;
   height: 45px;
   border-radius: 30px;
   border: none;
+  position: relative;
   padding: 10px 20px;
   
 }
@@ -189,6 +192,7 @@ li{
 .content{
   width: 150px;
   font-size: medium;
+  text-align: center;
   padding: 0px 3px;
 }
 
