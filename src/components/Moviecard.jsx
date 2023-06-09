@@ -16,13 +16,17 @@ import React from "react";
 function imageurl(poster_path){
     return `https://www.themoviedb.org/t/p/w220_and_h330_face${poster_path}`
 }
-function Moviecard({poster_path,title,name}){
+function Moviecard({poster_path,title,name,id}){
     return <div className="card-container">
             <div>
-                <img src={imageurl(poster_path)} alt={title} className="movie-image"/>
+                <a className="no-underline" href={`https://www.themoviedb.org/movie/${id}`}>
+                    <img src={imageurl(poster_path)} alt={title} className="movie-image"/>
+                </a>
             </div>
-            <div >
+            <div>
+            <a className="no-underline text-black"  href={`https://www.themoviedb.org/movie/${id}`}>
                 <h3 className="content"> {title}{name} </h3>
+            </a>
             </div>
         </div>
 }
