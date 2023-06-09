@@ -207,5 +207,10 @@ h6{
   padding: 5px 2px;
   position: relative;
 }
-
+.borger-blue{
+  background-color: rgb(13, 37, 65);
+}
+.bg-blue{
+  background-color: rgb(13, 37, 65);;
+}
 

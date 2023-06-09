@@ -1,9 +1,6 @@
-import {React,useState,useEffect} from "react";
-import Moviecard from "./Moviecard";
-import axios from "axios";
+import React from 'react'
 
-function Movielist(){
-
+export default function TrailerList() {
     const [movies,setmovies] = useState([]) 
 
     useEffect(()=>{
@@ -15,7 +12,7 @@ function Movielist(){
         axios.get(`https://api.themoviedb.org/3/trending/all/day?api_key=2240a90f6db43839a5c5c70f567b37a7`);
         setmovies(movie.data.results);
     }
-    
+
     return <div className="movielist">
         {   movies.map((movie)=>{
                 return <Moviecard {...movie}/>  
@@ -23,5 +20,3 @@ function Movielist(){
         }
     </div>
 }
-
-export default Movielist;
