@@ -1,6 +1,16 @@
 import React from 'react'
+import { useState } from 'react';
 
 function Hero(){
+    const [searchinput,setSearchinput]=useState("");
+    function handlechange(e){
+        setSearchinput(e.target.value);
+    }
+    function handleSearch(){
+        const encodedQuery = encodeURIComponent(searchinput);
+        window.location.href = `https://www.themoviedb.org/search?query=${encodedQuery}`
+    }
+
     return (
     <div className='hero-section'>
         <div className='hero-Section1'>
@@ -9,8 +19,9 @@ function Hero(){
                 <h3>Millions of movies, TV shows and people to discover. Explore now.</h3>
             </div>
             <div className='search'>
-                <input type="text" id='searchbar' placeholder='Search for movie, tv shows, person.......' />
-                <input type="submit" value="Search" id="search-btn"/>
+                <input type="text" id='searchbar' value={searchinput} onChange={handlechange}
+                placeholder='Search for movie, tv shows, person.......' />
+                <input type="submit" value="Search" id="search-btn" onClick={handleSearch}/>
             </div>
         </div>
         <div className='hero-Section2'>

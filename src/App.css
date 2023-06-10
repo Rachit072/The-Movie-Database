@@ -65,6 +65,12 @@ li{
   color: white;
   border: 1px white solid;
   border-radius: 3px;
+  padding:2px 3px;
+  font-size: small;
+}
+#btn-lang:hover{
+  background-color: white;
+  color: black;
 }
 .search-glass{
   color: rgb(52, 171, 235);
@@ -94,11 +100,16 @@ li{
 #searchbar {
   width: 92.2%;
   height: 45px;
+  color: black;
   border-radius: 30px;
   border: none;
   position: relative;
   padding: 10px 20px;
   
+}
+#searchbar:focus{
+  
+  outline: none;
 }
 #search-btn{
   display: inline-flex;
@@ -111,6 +122,9 @@ li{
   border: none;
   background-color: rgb(30, 213, 169);
   color: white;
+}
+#search-btn:hover{
+  color:black;
 }
 #checkit-btn{
   border-radius: 30px;

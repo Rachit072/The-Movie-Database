@@ -29,37 +29,37 @@ function Header(){
                         <div className="cursor-pointer"  onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>Movies
                         {isOpen && (
                         <ul className="absolute  py-2 bg-white text-gray-800 rounded  top-full left-0">
-                            <li className="pr-8 py-1 ">Popular</li>
-                            <li className="pr-8 py-1 ">Now Playing</li>
-                            <li className="pr-8 py-1 ">Upcoming</li>
-                            <li className="pr-8 py-1 ">Top Rated</li>
+                            <li className="pr-8 py-1 "><a className="no-underline text-black"  href="https://www.themoviedb.org/movie">Popular</a></li>
+                            <li className="pr-8 py-1 "><a className="no-underline text-black"  href="https://www.themoviedb.org/movie/now-playing">Now Playing</a></li>
+                            <li className="pr-8 py-1 "><a className="no-underline text-black"  href="https://www.themoviedb.org/movie/upcoming">Upcoming</a></li>
+                            <li className="pr-8 py-1 "><a className="no-underline text-black"  href="https://www.themoviedb.org/movie/top-rated">Top Rated</a></li>
                         </ul>
                         )}
                         </div>
                         <div className="cursor-pointer" onMouseEnter={toggleDropdown2} onMouseLeave={toggleDropdown2}>TV Shows
                         {isOpen2 && (
                         <ul className="absolute  py-2 bg-white text-gray-800 rounded  top-full left-18">
-                            <li className="pr-8 py-1 ">Popular</li>
-                            <li className="pr-8 py-1 ">Airing Today</li>
-                            <li className="pr-8 py-1 ">On TV</li>
-                            <li className="pr-8 py-1 ">Top Rated</li>
+                            <li className="pr-8 py-1 "><a className="no-underline text-black"  href="https://www.themoviedb.org/tv">Popular</a></li>
+                            <li className="pr-8 py-1 "><a className="no-underline text-black"  href="https://www.themoviedb.org/tv/airing-today">Airing Today</a></li>
+                            <li className="pr-8 py-1 "><a className="no-underline text-black"  href="https://www.themoviedb.org/tv/on-the-air">On TV</a></li>
+                            <li className="pr-8 py-1 "><a className="no-underline text-black"  href="https://www.themoviedb.org/tv/top-rated">Top Rated</a></li>
                         </ul>
                         )}
                         </div>
                         <div className="cursor-pointer" onMouseEnter={toggleDropdown3} onMouseLeave={toggleDropdown3}>People
                         {isOpen3 && (
                         <ul className="absolute  py-2 bg-white text-gray-800 rounded  top-full left-40">
-                            <li className="pr-8 py-1 ">Popular People</li>
+                            <li className="pr-8 py-1 "><a className="no-underline text-black" href="https://www.themoviedb.org/person">Popular People</a></li>
                         </ul>
                         )}
                         </div>
                         <div className="cursor-pointer" onMouseEnter={toggleDropdown4} onMouseLeave={toggleDropdown4}>More
                         {isOpen4 && (
                         <ul className="absolute  py-2 bg-white text-gray-800 rounded  top-full left-60">
-                            <li className="pr-8 py-1 ">Discussions</li>
-                            <li className="pr-8 py-1 ">Leaderboard</li>
-                            <li className="pr-8 py-1 ">Support</li>
-                            <li className="pr-8 py-1 ">API</li>
+                            <li className="pr-8 py-1 "><a className="no-underline text-black" href="https://www.themoviedb.org/discuss">Discussions</a></li>
+                            <li className="pr-8 py-1 "><a className="no-underline text-black" href="https://www.themoviedb.org/leaderboard">Leaderboard</a></li>
+                            <li className="pr-8 py-1 "><a className="no-underline text-black" href="https://www.themoviedb.org/talk">Support</a></li>
+                            <li className="pr-8 py-1 "><a className="no-underline text-black" href="https://developer.themoviedb.org/docs">API</a></li>
                         </ul>
                         )}
                         </div>
