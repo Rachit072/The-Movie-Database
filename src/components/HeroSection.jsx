@@ -3,8 +3,15 @@ import { useState } from 'react';
 
 function Hero(){
     const [searchinput,setSearchinput]=useState("");
+
     function handlechange(e){
         setSearchinput(e.target.value);
+    }
+    
+    function handleKeyDown(e){
+        if(e.key=='Enter'){
+            handleSearch();
+        }
     }
     function handleSearch(){
         const encodedQuery = encodeURIComponent(searchinput);
@@ -19,7 +26,7 @@ function Hero(){
                 <h3>Millions of movies, TV shows and people to discover. Explore now.</h3>
             </div>
             <div className='search'>
-                <input type="text" id='searchbar' value={searchinput} onChange={handlechange}
+                <input type="text" id='searchbar' value={searchinput} onKeyDown={handleKeyDown} onChange={handlechange}
                 placeholder='Search for movie, tv shows, person.......' />
                 <input type="submit" value="Search" id="search-btn" onClick={handleSearch}/>
             </div>
