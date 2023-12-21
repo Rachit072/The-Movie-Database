@@ -9,7 +9,7 @@ function Hero(){
     }
     
     function handleKeyDown(e){
-        if(e.key=='Enter'){
+        if(e.key==='Enter'){
             handleSearch();
         }
     }
@@ -26,9 +26,13 @@ function Hero(){
                 <h3>Millions of movies, TV shows and people to discover. Explore now.</h3>
             </div>
             <div className='search'>
-                <input type="text" id='searchbar' value={searchinput} onKeyDown={handleKeyDown} onChange={handlechange}
-                placeholder='Search for movie, tv shows, person.......' />
-                <input type="submit" value="Search" id="search-btn" onClick={handleSearch}/>
+                <div>
+                    <input type="text" id='searchbar' value={searchinput} onKeyDown={handleKeyDown} onChange={handlechange}
+                    placeholder='Search for movie, tv shows, person.......' />
+                </div>
+                <div>
+                    <input type="submit" value="Search" id="search-btn" onClick={handleSearch}/>
+                </div>
             </div>
         </div>
         <div className='hero-Section2'>
